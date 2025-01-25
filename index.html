@@ -1,221 +1,188 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-  <link rel="icon" type="image/png" href="logo stor.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>فروشگاه لوازم درمانی</title>
+  <link rel="icon" type="image/png" href="logo stor.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column; /* تغییر جهت به عمودی */
-      position: relative;
-    }
-
-    header .logo {
-      width: 150px;
-      position: absolute; /* عکس را در سمت چپ ثابت می‌کنیم */
-      left: 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      text-align: center;
-      flex-grow: 1;
-    }
-
-    nav {
-      margin-top: 10px; /* فاصله از عنوان */
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 20px;
-      justify-content: center; /* منو را در وسط قرار می‌دهد */
-    }
-
-    nav ul li {
-      display: inline;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-size: 1.2em;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      background-image: url('https://source.unsplash.com/1600x600/?medical');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-
-    .hero button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 1.2em;
-      cursor: pointer;
-    }
-
-    .hero button:hover {
-      background-color: #4caf4fb7;
-    }
-    /* حالت اولیه دکمه "ورود" */
-#btn2 {
-  background-color: #2196F3; /* رنگ آبی قبلی */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* تغییر رنگ دکمه وقتی که روی آن کلیک می‌شود */
-#btn2.clicked {
-  background-color: #1976D2; /* رنگ آبی تیره‌تر وقتی که دکمه کلیک می‌شود */
-}
-
-/* حالت hover دکمه */
-#btn2:hover {
-  background-color: #2195f3ba; /* رنگ روشن‌تر در هنگام هاور */
-}
-
-
-    .products {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .products h3 {
-      font-size: 2em;
-      margin-bottom: 30px;
-      color: #4CAF50;
-    }
-
-    .product-category {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .category {
-      background: white;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      overflow: hidden;
-      width: 300px;
-      transition: transform 0.3s ease;
-    }
-
-    .category img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .category h4 {
-      margin: 0;
-      padding: 15px;
-      font-size: 1.5em;
-      color: #333;
-    }
-
-    .category:hover {
-      transform: scale(1.1);
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 50px;
-    }
-  </style>
 </head>
 <body>
-  <header>
-    
+  <!-- هدر -->
+  <header class="bg-success text-white text-center py-4">
     <img src="logo stor.png" alt="Store Logo" class="logo">
-    
     <h1>فروشگاه لوازم درمانی</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">صفحه اصلی</a></li>
-        <li><a href="#">محصولات</a></li>
-        <li><a href="#">درباره ما</a></li>
-        <li><a href="#">تماس با ما</a></li>
+    <nav class="mt-3">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="index.html" class="text-white text-decoration-none">صفحه اصلی</a></li>
+        <li class="list-inline-item"><a href="products.html" class="text-white text-decoration-none">محصولات</a></li>
+        <li class="list-inline-item"><a href="about.html" class="text-white text-decoration-none">درباره ما</a></li>
+        <li class="list-inline-item"><a href="contact.html" class="text-white text-decoration-none">تماس با ما</a></li>
+        <li class="list-inline-item"><a href="blog.html" class="text-white text-decoration-none">بلاگ</a></li>
+        <li class="list-inline-item"><a href="faq.html" class="text-white text-decoration-none">سوالات متداول</a></li>
       </ul>
     </nav>
-    <br>
-    <br>
   </header>
 
-  <section class="hero">
-    <h2 style="color: #191a19;">بهترین لوازم درمانی با قیمت مناسب</h2>
-    <button onclick="window.location.href='signup.html'">ثبت‌ نام</button>
-    <button onclick="window.location.href='browse.html'" id="btn2">ورود</button>
+  <!-- بخش هیرو -->
+  <section class="hero text-center py-5">
+    <h2 class="text-dark">بهترین لوازم درمانی با قیمت مناسب</h2>
+    <button onclick="window.location.href='signup.html'" class="btn btn-success mx-2">ثبت‌ نام</button>
+    <button onclick="window.location.href='browse.html'" class="btn btn-primary mx-2">ورود</button>
   </section>
 
-  <section class="products">
-    <h3>دسته‌بندی محصولات</h3>
-    <div class="product-category">
-      <div class="category">
-        <img src="ماسک-سه-لایه-تخت.jpg" alt="ماسک" class="category1">
-        <h4>ماسک</h4>
-      </div>
-      <div class="category">
-        <img src="shopping.webp" alt="فشارسنج">
-        <h4>فشارسنج</h4>
-      </div>
-      <div class="category">
-        <img src="download.jpeg" alt="دستگاه قند خون">
-        <h4>دستگاه قند خون</h4>
+  <!-- دسته‌بندی محصولات -->
+  <section class="products py-5">
+    <div class="container">
+      <h3 class="text-center mb-5">دسته‌بندی محصولات</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="category card">
+            <img src="ماسک-سه-لایه-تخت.jpg" alt="ماسک" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">ماسک</h4>
+              <a href="mask-products.html" class="btn btn-success">مشاهده محصولات</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="category card">
+            <img src="shopping.webp" alt="فشارسنج" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">فشارسنج</h4>
+              <a href="pressure-products.html" class="btn btn-success">مشاهده محصولات</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="category card">
+            <img src="download.jpeg" alt="دستگاه قند خون" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">دستگاه قند خون</h4>
+              <a href="sugar-products.html" class="btn btn-success">مشاهده محصولات</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- بخش خدمات مشتریان -->
+  <section class="customer-services py-5 bg-light">
+    <div class="container">
+      <h3 class="text-center mb-5">خدمات مشتریان</h3>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h4>ارسال سریع</h4>
+          <p>ارسال سفارشات شما در کمترین زمان ممکن</p>
+        </div>
+        <div class="col-md-4">
+          <h4>پشتیبانی 24/7</h4>
+          <p>پشتیبانی آنلاین در هر زمان از روز</p>
+        </div>
+        <div class="col-md-4">
+          <h4>تضمین کیفیت</h4>
+          <p>ارائه محصولات با بهترین کیفیت</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- بخش محصولات پرفروش -->
+  <section class="best-sellers py-5">
+    <div class="container">
+      <h3 class="text-center mb-5">محصولات پرفروش</h3>
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="download (4).jpeg" alt="محصول ۱" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">ماسک سه لایه</h5>
+              <p class="card-text">قیمت: ۲۰,۰۰۰ تومان</p>
+              <a href="#" class="btn btn-success">افزودن به سبد خرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="download (3).jpeg" alt="محصول ۲" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">فشارسنج دیجیتال</h5>
+              <p class="card-text">قیمت: ۳۰۰,۰۰۰ تومان</p>
+              <a href="#" class="btn btn-success">افزودن به سبد خرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="download (2).jpeg" alt="محصول ۳" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">دستگاه قند خون</h5>
+              <p class="card-text">قیمت: ۴۵۰,۰۰۰ تومان</p>
+              <a href="#" class="btn btn-success">افزودن به سبد خرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="download (1).jpeg" alt="محصول ۴" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">تب‌سنج دیجیتال</h5>
+              <p class="card-text">قیمت: ۱۵۰,۰۰۰ تومان</p>
+              <a href="#" class="btn btn-success">افزودن به سبد خرید</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- بخش بلاگ -->
+  <section class="blog py-5 bg-light">
+    <div class="container">
+      <h3 class="text-center mb-5">مقالات سلامت</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images.jpeg" alt="مقاله ۱" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">نحوه استفاده صحیح از ماسک</h5>
+              <p class="card-text">در این مقاله به شما آموزش می‌دهیم چگونه از ماسک به درستی استفاده کنید.</p>
+              <a href="blog-post1.html" class="btn btn-success">مشاهده مقاله</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="فشار-خون-1100x700.jpg" alt="مقاله ۲" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">راه‌های کنترل فشار خون</h5>
+              <p class="card-text">در این مقاله راه‌های کنترل فشار خون را بررسی می‌کنیم.</p>
+              <a href="blog-post2.html" class="btn btn-success">مشاهده مقاله</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="download (5).jpeg" alt="مقاله ۳" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">اهمیت اندازه‌گیری قند خون</h5>
+              <p class="card-text">در این مقاله اهمیت اندازه‌گیری قند خون را بررسی می‌کنیم.</p>
+              <a href="blog-post3.html" class="btn btn-success">مشاهده مقاله</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- فوتر -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>تمامی حقوق محفوظ است &copy; 2023 فروشگاه لوازم درمانی</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
- 
-
-
-
-
